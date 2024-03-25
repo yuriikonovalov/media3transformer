@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".transformer.TransformerActivity">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/choose_video1_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Choose video 1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/video_1_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//:video1-path ---> min 30 seconds" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/choose_video2_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Choose video 2" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/video_2_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//:video2-path --> min 20 seconds" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/choose_image_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Choose image" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/image_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//:image-path" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/choose_gif_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Choose gif filter" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/gif_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//:gif-path" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/choose_audio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="Choose audio" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/audio_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="//:audio-path" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/stats_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="..."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_layout_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Start layout" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_timeline_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Start timeline" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_animated_filter_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Start animated filter" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancel_button"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:text="Cancel" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
